@@ -1,0 +1,88 @@
+#main {
+  overflow: hidden;
+}
+
+/**
+ * Grid items animation
+ */
+#tiles li {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.wookmark-placeholder {
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+/**
+ * Filters
+ */
+
+header nav {
+
+text-align: center;
+
+background: #01A3FF;
+display: block;
+
+float: left;
+
+width: 100%;
+
+
+}
+
+header nav ol {
+
+margin: 0;
+
+padding: 1em;
+
+list-style-type: none;
+
+}
+
+header nav ol li {
+
+display: inline;
+
+margin-left: 1em;
+
+}
+
+header nav ol li:first-child {
+
+margin-left: 0;
+
+}
+
+header nav ol li ol {
+
+display: none;
+
+}
+
+header nav a:link {
+	color: #fff;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+header nav a:visited {
+	color: #fff;
+	text-transform:uppercase;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	background-color: #F0F;
+	text-decoration: none;
+}
+header nav a:active {
+	background-color: #F0F;
+	text-decoration: none;
+}

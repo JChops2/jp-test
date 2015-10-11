@@ -1,0 +1,512 @@
+/*
+Theme Name: JP BootStrap5
+Theme URI: http://www.jaredpereira.com/
+Author: Jared Pereira
+Author URI: http://www.jaredpereira.com
+Description: The 2015 Bootstrap Wordpress HTML5 Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: jaredpereira.com
+
+This theme is licensed under the GPL.
+
+*/
+
+/* Space out content a bit */
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,300,700,400);
+html,
+body {
+  height: 100%;
+}
+body {
+	background: url('images/espresso.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:#fff;
+  	background-color:#333;
+  	font-family: 'Roboto',sans-serif;
+}
+a {
+	font-family: 'Roboto';
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1.blog-post-title {
+	padding: 15px 15px;
+	color: #2baae1;
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	font-size: 36px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+h5 {
+	line-height: 1.5em;
+	font-weight: normal;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Custom page header */
+.portfolio-header { 
+	font-weight: 900;
+    text-align:left;
+	width: 100%;
+	color: #009CFF;
+	padding: 0px 0px 5px 0px;
+  	background-image:url("images/h1-border.png");
+	background-position: 0px bottom;
+	background-repeat: repeat-x;
+}
+.home-box {
+	margin-top: 200px;
+	background-color: rgba(0,0,0,.8);
+	padding: 15px 25px;
+}
+.home-box h1 { 
+	font-size: 46px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto',sans-serif;
+}
+.navbar-brand {
+	margin-top: -8px;
+	color: #2baae1 !important;
+}
+.navbar {
+	background-color: #000;
+	border:none;
+}
+.nav {
+	font-weight: 300;
+	font-size: 16px;
+}
+.navbar li {
+	margin-right: 0px;
+}
+.navbar li.menu-item a,  .navbar li.menu-item a:visited { 
+	color: #fff;
+	border-bottom: 3px #000 solid;
+	}
+.navbar li.menu-item a:hover,.navbar li.menu-item a:active {
+	border-bottom: 3px #000 solid;
+	color: #fff;
+	background: #2baae1;
+}
+.navbar .current_page_item a {
+	border-bottom: 3px #000 solid!important;
+	color: #fff;
+	background: #2baae1;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #fff;
+  border-top: none;
+}
+.footer-content {
+	padding: 15px 0px;
+	background: #000;
+	margin: 0px auto;
+	background: rgba(0,0,0,0.8);
+	width: 90%;
+}
+p {
+	margin: 0px 0px;
+	padding: 10px 0px;	
+}
+.feature, feature img {
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0px 0px;	
+}
+
+.jumbotron {
+	position:relative;
+	height: auto;
+	overflow:hidden;
+	margin-bottom:10px;
+	width: 100%;
+	padding: 0px 0px;
+}
+.jumbotron img {
+	width: 100%;
+}
+.jumbotron .jumbo-overlay {
+	position:absolute;
+	bottom:0;
+	left:0px;
+	width: 100%;
+	height: 100px;
+	background-color: #000;
+	background-color:rgba(0,0,0,0.8);
+}
+.jumbotron .jumbo-overlay p {
+	color: #fff;
+	padding: 5px 5px 0px 5px;
+	font-size: 20px;
+	opacity:1;
+}
+.jumbotron .jumbo-overlay a {
+	margin-top: 10px;
+}
+.no-padding {
+	padding: 0px 0px;
+}
+.footer {
+	text-align: center;
+}
+.portfolio-th {
+	margin: 0px 0px 20px 0px;
+	overflow: hidden;
+}
+.thumbnail {
+	height: 125px;
+	margin: 0px 0px;
+	padding: 5px 5px;
+}
+.thumbnail a {
+	float: left;
+	height: 113px;
+	overflow: hidden;
+}
+.thumbnail a:hover {
+	background: #000;
+}
+.thumbnail a img {
+	width: 100%;
+	height: 100%;
+}
+.thumbnail:hover img {
+	opacity: .8;
+	height: 100%;
+}
+.thumbnail a span.glyphicon-zoom-in{
+	visibility:hidden;
+	color: #fff;
+	position:absolute;
+	font-size: 40px;
+	left:40%;
+	top:33%;
+	z-index:999;
+}
+.thumbnail:hover a span.glyphicon-zoom-in {
+	visibility:visible;
+}
+
+.top-margin {
+	padding-top: 75px;
+}
+.top-margin-single {
+	padding-top: 75px;
+}
+
+/******************************************/
+
+/* Styles for pages outside of wordpress  */
+
+/******************************************/
+
+.resume {
+	float: left;
+	display: block; 
+	background: none; 
+	margin: 0px 0px 20px 0px;
+	font-size: 15px;
+	line-height: 28px;
+	-moz-border-radius: 5px 5px;
+	-webkit-border-radius: 5px 5px;
+	border-radius: 5px 5px; /* future proofing */
+	-khtml-border-radius: 5px 5px; /* for old Konqueror browsers */
+}
+.resume a:link, .resume a:visited {
+	float: left;
+	color: #fff;
+	width: 100%;
+	background: #01A3FF; 
+	padding: 20px 20px 18px 20px;
+	text-decoration: none;
+	-moz-border-radius: 5px 5px;
+	-webkit-border-radius: 5px 5px;
+	border-radius: 5px 5px; /* future proofing */
+	-khtml-border-radius: 5px 5px; /* for old Konqueror browsers */
+}
+.resume a:hover, .resume a:active {
+	float: left;
+	color: #fff;
+	width: 100%;
+	padding: 20px 20px 18px 20px;
+	background-color: #999;
+	text-decoration: none;
+	-moz-border-radius: 5px 5px;
+	-webkit-border-radius: 5px 5px;
+	border-radius: 5px 5px; /* future proofing */
+	-khtml-border-radius: 5px 5px; /* for old Konqueror browsers */
+}
+#exp_wrapper {
+	float: left;
+	display: block;
+}
+.section {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block; 
+	background: #FFF; 
+	color: #333;
+	padding: 20px 0px 10px 20px;
+	margin: 0px 0px 20px 0px;
+	font-size: 15px;
+	line-height: 20px;
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;; /* future proofing */
+	-khtml-border-radius: 0px 5px 5px 5px;; /* for old Konqueror browsers */
+}
+.section h2 {
+	text-transform: uppercase;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+.section p {
+	margin: 10px 0px 20px 0px;
+	width: 93%;	
+}
+.tab_title {
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px;
+	font-size: 18px;
+}
+.tab {
+	clear:both;
+	float: left;
+	padding: 20px 20px;
+	font-size: 18px;
+	background: #01A3FF;
+	color: #fff;
+	border-top: 4px #fff solid;	
+}
+.table-container {
+	position:relative;
+	float: left;
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	display: block;
+}
+.table-column {
+	float: left;
+	width: 30%;
+	display: block;
+	margin: 0px 10px 0px 0px;
+}
+.apps ul {
+	list-style: none;
+	list-style-position: inside;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	
+}
+.apps li {
+	width: 100%;
+	line-height: 28px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.apps img {
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+.article-header img {
+  padding: 10px;
+  background:#fff;
+  border: 1px #ccc solid;
+}
+.single-content {
+	padding: 10px 20px;
+	background: #fff;
+	color: #575757;
+}
+.pager li a {
+	background: #000;
+	color: #fff;
+}
+.pager li a:hover, .pager li a:active {
+	color: #000;
+}
+.about {
+	border-top: 6px #2baae1 solid;
+	font-size: 18px;
+}
+.about h1 {
+	font-size: 56px;
+	line-height: 50px;
+}
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }<
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 850px;
+  }
+    /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+.top-margin {
+	padding-top: 50px;
+}
+.top-margin-single {
+	padding-top: 100px;
+}
+/* Start the vertical centering */
+.site-wrapper-inner {
+	vertical-align: middle;
+}
+/* Handle the widths */
+.masthead,
+.mastfoot,
+.cover-container {
+	width: 100%; /* Must be percentage or pixels for horizontal alignment */
+}
+/* Remove the padding we set earlier */
+.header,
+.marketing,
+.footer {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar li {
+	margin-right: 10px;
+}
+.navbar li.menu-item a,  .navbar li.menu-item a:visited { 
+	color: #fff;
+	border-bottom: 3px #000 solid;
+}
+.navbar li.menu-item a:hover,.navbar li.menu-item a:active {
+	border-bottom: 3px #2baae1 solid;
+	color: #fff;
+	background: #000;
+}
+.navbar .current_page_item a {
+	border-bottom: 3px #2baae1 solid!important;
+	color: #fff;
+	background: #000;
+}
+  /* Space out the masthead */
+.header {
+    margin-bottom: 30px;
+}
+.home-box {
+	margin: 0px 0px 0px 0px;
+}
+h1 { 
+	font-size: 50px;
+}
+.jumbotron {
+	position:relative;
+	height: auto;
+	overflow:hidden;
+	margin-bottom:10px;
+	width: 100% !important;
+	padding: 0px 0px !important;
+	border-bottom: 0;
+}
+.jumbotron img {
+	width: 100%;
+}
+.jumbotron .jumbo-overlay {
+	position:absolute;
+	bottom:0;
+	left:0px;
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	background-color:rgba(0,0,0,0.8);
+}
+.jumbotron .jumbo-overlay p {
+	color: #fff;
+	padding: 10px 10px 0px 10px;
+	font-size: 30px;
+	opacity:1;
+}
+.jumbotron .jumbo-overlay a {
+	margin-top: 10px;
+}
+.jumbotron .btn {
+	padding: 14px 24px;
+	font-size: 21px;
+}
+.footer-content {
+	padding: 15px 15px;
+	background: #000;
+	margin: 0px auto;
+	background: rgba(0,0,0,0.8);
+	width: 30%;
+}
+}
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 800px;
+  }
+}

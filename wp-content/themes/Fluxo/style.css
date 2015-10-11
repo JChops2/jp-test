@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document
+
+Theme Name: Fluxo 1.0
+Author: Jared Pereira
+Created: October 2, 2013
+Website: www.jaredpereira.com
+Theme URI: index.php
+
+*/
+
+/******************************************/
+
+/* Styles for pages outside of wordpress  */
+
+/******************************************/
+
+.resume {
+	float: left;
+	display: block; 
+	background: none; 
+	margin: 0px 0px 20px 0px;
+	font-size: 15px;
+	line-height: 28px;
+	-moz-border-radius: 5px 5px;
+	-webkit-border-radius: 5px 5px;
+	border-radius: 5px 5px; /* future proofing */
+	-khtml-border-radius: 5px 5px; /* for old Konqueror browsers */
+}
+.resume a:link, .resume a:visited {
+	float: left;
+	color: #fff;
+	background: #ccc; 
+	padding: 20px 20px 18px 20px;
+	text-decoration: none;
+	-moz-border-radius: 5px 5px;
+	-webkit-border-radius: 5px 5px;
+	border-radius: 5px 5px; /* future proofing */
+	-khtml-border-radius: 5px 5px; /* for old Konqueror browsers */
+}
+.resume a:hover, .resume a:active {
+	float: left;
+	color: #fff;
+	padding: 20px 20px 18px 20px;
+	background-color: #01A3FF;
+	text-decoration: none;
+	-moz-border-radius: 5px 5px;
+	-webkit-border-radius: 5px 5px;
+	border-radius: 5px 5px; /* future proofing */
+	-khtml-border-radius: 5px 5px; /* for old Konqueror browsers */
+}
+#exp_wrapper {
+	float: left;
+	display: block;
+}
+.section {
+	clear: both;
+	float: left;
+	width: 80%; 
+	display: block; 
+	background: #FFF; 
+	color: #333;
+	padding: 20px 0px 10px 20px;
+	margin: 0px 0px 20px 0px;
+	font-size: 15px;
+	line-height: 20px;
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;; /* future proofing */
+	-khtml-border-radius: 0px 5px 5px 5px;; /* for old Konqueror browsers */
+}
+.section h2 {
+	text-transform: uppercase;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+.section p {
+	margin: 10px 0px 20px 0px;
+	width: 93%;	
+}
+.tab_title {
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px;
+	font-size: 18px;
+}
+.tab {
+	clear:both;
+	float: left;
+	padding: 20px 20px;
+	font-size: 18px;
+	background: #01A3FF;
+	color: #fff;
+	border-top: 4px #fff solid;	
+}
+.table-container {
+	float: left;
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+.table-column {
+	float: left;
+	width: 33%;
+}
+.table-column ul {
+	list-style: none;
+	list-style-position: inside;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+.table-column li {
+	float: left;
+	width: 100%;
+	line-height: 28px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.table-column img {
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+@media all and (min-width : 640px) and (max-width : 1150px) {
+  #exp_wrapper {
+	  display:none;
+  }
+  .resume {
+	  width: 100%;
+	  margin: 50% 0%;
+  }
+  .resume a:link, .resume a:visited, .resume a:hover, .resume a:active {
+  	display: block;
+	width: 90%;
+  }
+
+}	
